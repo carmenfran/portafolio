@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="Amarillo">
+<graphics>
+<position x="315.0" y="150.0"/>
+</graphics>
+<name>
+<value>Amarillo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Rojo">
+<graphics>
+<position x="315.0" y="45.0"/>
+</graphics>
+<name>
+<value>Rojo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Verde">
+<graphics>
+<position x="315.0" y="255.0"/>
+</graphics>
+<name>
+<value>Verde</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="G-&gt;Y">
+<graphics>
+<position x="405.0" y="210.0"/>
+</graphics>
+<name>
+<value>G-&gt;Y</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="R-&gt;RY">
+<graphics>
+<position x="210.0" y="90.0"/>
+</graphics>
+<name>
+<value>R-&gt;RY</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RY-&gt; G">
+<graphics>
+<position x="210.0" y="195.0"/>
+</graphics>
+<name>
+<value>RY-&gt; G</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Y-&gt;R">
+<graphics>
+<position x="405.0" y="90.0"/>
+</graphics>
+<name>
+<value>Y-&gt;R</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Amarillo to RY-&gt; G" source="Amarillo" target="RY-&gt; G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="313" y="168" curvePoint="false"/>
+<arcpath id="001" x="227" y="206" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Amarillo to Y-&gt;R" source="Amarillo" target="Y-&gt;R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="339" y="153" curvePoint="false"/>
+<arcpath id="001" x="411" y="107" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G-&gt;Y to Amarillo" source="G-&gt;Y" target="Amarillo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="412" y="217" curvePoint="false"/>
+<arcpath id="001" x="339" y="170" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="R-&gt;RY to Amarillo" source="R-&gt;RY" target="Amarillo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="226" y="108" curvePoint="false"/>
+<arcpath id="001" x="313" y="154" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="R-&gt;RY to Rojo" source="R-&gt;RY" target="Rojo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="227" y="101" curvePoint="false"/>
+<arcpath id="001" x="313" y="63" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Rojo to R-&gt;RY" source="Rojo" target="R-&gt;RY">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="312" y="62" curvePoint="false"/>
+<arcpath id="001" x="227" y="94" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Rojo to RY-&gt; G" source="Rojo" target="RY-&gt; G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="318" y="69" curvePoint="false"/>
+<arcpath id="001" x="227" y="199" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RY-&gt; G to Verde" source="RY-&gt; G" target="Verde">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="226" y="213" curvePoint="false"/>
+<arcpath id="001" x="313" y="259" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Verde to G-&gt;Y" source="Verde" target="G-&gt;Y">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="340" y="260" curvePoint="false"/>
+<arcpath id="001" x="411" y="227" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Y-&gt;R to Rojo" source="Y-&gt;R" target="Rojo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="412" y="97" curvePoint="false"/>
+<arcpath id="001" x="340" y="63" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

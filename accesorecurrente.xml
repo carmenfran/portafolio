@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="A_comienzo">
+<graphics>
+<position x="218.0" y="117.0"/>
+</graphics>
+<name>
+<value>A_comienzo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="A_U_F1">
+<graphics>
+<position x="216.0" y="292.0"/>
+</graphics>
+<name>
+<value>A_U_F1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="A_U_F12">
+<graphics>
+<position x="231.0" y="451.0"/>
+</graphics>
+<name>
+<value>A_U_F12</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="B_Comienzo">
+<graphics>
+<position x="457.0" y="113.0"/>
+</graphics>
+<name>
+<value>B_Comienzo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="B_U_F2">
+<graphics>
+<position x="461.0" y="289.0"/>
+</graphics>
+<name>
+<value>B_U_F2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="B_U_F21">
+<graphics>
+<position x="455.0" y="462.0"/>
+</graphics>
+<name>
+<value>B_U_F21</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="F1">
+<graphics>
+<position x="355.0" y="151.0"/>
+</graphics>
+<name>
+<value>F1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="F2">
+<graphics>
+<position x="360.0" y="236.0"/>
+</graphics>
+<name>
+<value>F2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Semaforo">
+<graphics>
+<position x="350.0" y="60.0"/>
+</graphics>
+<name>
+<value>Semaforo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="A_parada">
+<graphics>
+<position x="233.0" y="535.0"/>
+</graphics>
+<name>
+<value>A_parada</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="A_T_F1">
+<graphics>
+<position x="216.0" y="217.0"/>
+</graphics>
+<name>
+<value>A_T_F1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="A_T_F2">
+<graphics>
+<position x="231.0" y="372.0"/>
+</graphics>
+<name>
+<value>A_T_F2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="B_parada">
+<graphics>
+<position x="464.0" y="543.0"/>
+</graphics>
+<name>
+<value>B_parada</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="B_T_F1">
+<graphics>
+<position x="456.0" y="376.0"/>
+</graphics>
+<name>
+<value>B_T_F1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="B_T_F2">
+<graphics>
+<position x="465.0" y="204.0"/>
+</graphics>
+<name>
+<value>B_T_F2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="A_comienzo to A_T_F1" source="A_comienzo" target="A_T_F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="228" y="143" curvePoint="false"/>
+<arcpath id="001" x="222" y="223" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_parada to A_comienzo" source="A_parada" target="A_comienzo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="235" y="551" curvePoint="false"/>
+<arcpath id="001" x="232" y="615" curvePoint="false"/>
+<arcpath id="002" x="174" y="616" curvePoint="false"/>
+<arcpath id="003" x="174" y="144" curvePoint="false"/>
+<arcpath id="004" x="215" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_parada to F1" source="A_parada" target="F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="253" y="552" curvePoint="false"/>
+<arcpath id="001" x="275" y="589" curvePoint="false"/>
+<arcpath id="002" x="363" y="177" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_parada to F2" source="A_parada" target="F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="247" y="552" curvePoint="false"/>
+<arcpath id="001" x="278" y="610" curvePoint="false"/>
+<arcpath id="002" x="368" y="262" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_parada to Semaforo" source="A_parada" target="Semaforo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="241" y="551" curvePoint="false"/>
+<arcpath id="001" x="237" y="596" curvePoint="false"/>
+<arcpath id="002" x="165" y="631" curvePoint="false"/>
+<arcpath id="003" x="167" y="86" curvePoint="false"/>
+<arcpath id="004" x="347" y="73" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_T_F1 to A_U_F1" source="A_T_F1" target="A_U_F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="222" y="233" curvePoint="false"/>
+<arcpath id="001" x="226" y="289" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_T_F2 to A_U_F12" source="A_T_F2" target="A_U_F12">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="242" y="388" curvePoint="false"/>
+<arcpath id="001" x="242" y="448" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_U_F12 to A_parada" source="A_U_F12" target="A_parada">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="243" y="477" curvePoint="false"/>
+<arcpath id="001" x="244" y="541" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="A_U_F1 to A_T_F2" source="A_U_F1" target="A_T_F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="230" y="318" curvePoint="false"/>
+<arcpath id="001" x="241" y="378" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_Comienzo to B_T_F2" source="B_Comienzo" target="B_T_F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="471" y="139" curvePoint="false"/>
+<arcpath id="001" x="481" y="211" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_parada to B_Comienzo" source="B_parada" target="B_Comienzo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="480" y="560" curvePoint="false"/>
+<arcpath id="001" x="489" y="599" curvePoint="false"/>
+<arcpath id="002" x="522" y="598" curvePoint="false"/>
+<arcpath id="003" x="519" y="131" curvePoint="false"/>
+<arcpath id="004" x="483" y="126" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_parada to F1" source="B_parada" target="F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="470" y="549" curvePoint="false"/>
+<arcpath id="001" x="420" y="506" curvePoint="false"/>
+<arcpath id="002" x="369" y="177" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_parada to F2" source="B_parada" target="F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="460" y="555" curvePoint="false"/>
+<arcpath id="001" x="419" y="571" curvePoint="false"/>
+<arcpath id="002" x="374" y="262" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_parada to Semaforo" source="B_parada" target="Semaforo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="470" y="559" curvePoint="false"/>
+<arcpath id="001" x="480" y="622" curvePoint="false"/>
+<arcpath id="002" x="537" y="620" curvePoint="false"/>
+<arcpath id="003" x="529" y="92" curvePoint="false"/>
+<arcpath id="004" x="376" y="73" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_T_F1 to B_U_F21" source="B_T_F1" target="B_U_F21">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="467" y="392" curvePoint="false"/>
+<arcpath id="001" x="467" y="459" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_T_F2 to B_U_F2" source="B_T_F2" target="B_U_F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="476" y="220" curvePoint="false"/>
+<arcpath id="001" x="473" y="286" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_U_F21 to B_parada" source="B_U_F21" target="B_parada">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="469" y="488" curvePoint="false"/>
+<arcpath id="001" x="480" y="550" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B_U_F2 to B_T_F1" source="B_U_F2" target="B_T_F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="472" y="315" curvePoint="false"/>
+<arcpath id="001" x="472" y="383" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="F1 to A_T_F1" source="F1" target="A_T_F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="353" y="170" curvePoint="false"/>
+<arcpath id="001" x="242" y="229" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="F1 to B_T_F1" source="F1" target="B_T_F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="372" y="176" curvePoint="false"/>
+<arcpath id="001" x="462" y="382" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="F2 to A_T_F2" source="F2" target="A_T_F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="361" y="258" curvePoint="false"/>
+<arcpath id="001" x="248" y="379" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="F2 to B_T_F2" source="F2" target="B_T_F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="386" y="242" curvePoint="false"/>
+<arcpath id="001" x="461" y="216" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Semaforo to A_T_F1" source="Semaforo" target="A_T_F1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="352" y="83" curvePoint="false"/>
+<arcpath id="001" x="232" y="224" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Semaforo to B_T_F2" source="Semaforo" target="B_T_F2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="371" y="83" curvePoint="false"/>
+<arcpath id="001" x="471" y="210" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
